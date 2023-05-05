@@ -1,0 +1,19 @@
+name: deploy to Clojars
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: lein deps
+    - name: Publish
+      env:
+        CLOJARS_USER: ${{ secrets.CLOJARS_USERNAME }}
+        CLOJARS_PASS: ${{ secrets.CLOJARS_PASSWORD }}
+      run: lein deploy clojars
