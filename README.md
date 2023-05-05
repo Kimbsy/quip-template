@@ -1,14 +1,14 @@
 # quip/quip
 
-A Leiningen template for FIXME.
+A Leiningen template for the quip game library.
 
 ## Usage
 
-FIXME
+``` bash
+lein new com.github.kimbsy/quip <project-name>
+```
 
 ## License
-
-Copyright © 2023 FIXME
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

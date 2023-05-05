@@ -1,4 +1,4 @@
-(defproject com.github.kimbsy/lein-template.quip "0.1.0-SNAPSHOT"
+(defproject com.github.kimbsy/lein-template.quip "1.0.0"
   :description "A Leiningen template for the Quip game library"
   :url "https://github.com/Kimbsy/quip-template"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
