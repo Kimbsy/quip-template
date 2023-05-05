@@ -6,5 +6,5 @@
   :eval-in-leiningen true
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo/"
                                     :username      :env/clojars_user
-                         x           :password      :env/clojars_pass
+                                    :password      :env/clojars_pass
                                     :sign-releases false}]])
