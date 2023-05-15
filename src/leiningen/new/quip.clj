@@ -5,12 +5,14 @@
 (def render (tmpl/renderer "quip"))
 
 (defn quip
-  "FIXME: write documentation"
+  "Create a basic quip project"
   [name]
   (let [data {:name name
               :sanitized (tmpl/name-to-path name)}]
     (main/info "Generating fresh 'lein new' quip/quip project.")
     (tmpl/->files data
+                  "src"
+                  "resources"
                   ["project.clj" (render "project.clj" data)]
                   ["README.md" (render "README.md" data)]
                   [".gitignore" (render "gitignore" data)]
