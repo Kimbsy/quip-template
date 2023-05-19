@@ -1,6 +1,6 @@
 # {{name}}
 
-A Quip game based on the Quil library.
+A quip game based on the Quil library.
 
 ## Running locally
 
