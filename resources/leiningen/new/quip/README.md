@@ -11,5 +11,9 @@ lein run
 ## Build jar
 
 ``` bash
+# Build
 lein uberjar
+
+# Run
+java -jar target/uberjar/{{name}}-0.1.0-standalone.jar
 ```
