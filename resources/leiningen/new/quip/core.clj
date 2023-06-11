@@ -15,6 +15,7 @@
   {:menu     (menu/init)
    :level-01 (level-01/init)})
 
+;; Configure the game
 (def {{name}}-game
   (qp/game {:title          "{{name}}"
             :size           [800 600]
@@ -23,5 +24,6 @@
             :current-scene  :menu}))
 
 (defn -main
+  "Run the game"
   [& args]
   (qp/run {{name}}-game))
