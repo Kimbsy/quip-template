@@ -1,6 +1,9 @@
 # {{name}}
 
-A quip game based on the Quil library.
+A quip game.
+
+For more info on quip check out the [repo](https://github.com/Kimbsy/quip), the [wiki](https://github.com/Kimbsy/quip/wiki), or the underlying
+[Quil](http://quil.info/) graphics library.
 
 ## Running locally
 

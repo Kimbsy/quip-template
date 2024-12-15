@@ -1,8 +1,8 @@
 (ns {{name}}.core
   (:gen-class)
   (:require [quip.core :as qp]
-            [{{name}}.scenes.menu :as menu]
-            [{{name}}.scenes.level-01 :as level-01]))
+            [{{name}}.scenes.level-01 :as level-01]
+            [{{name}}.scenes.menu :as menu]))
 
 (defn setup
   "The initial state of the game"
@@ -26,4 +26,4 @@
 (defn -main
   "Run the game"
   [& args]
-  (qp/run {{name}}-game))
+  (qp/start! {{name}}-game))
